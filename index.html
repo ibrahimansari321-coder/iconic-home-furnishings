@@ -6,52 +6,46 @@
 
 <title>Iconic Home Furnishings | Premium Sofa & Interior Solutions</title>
 
-<style>
+<meta name="description"
+content="Iconic Home Furnishings - Premium Sofa & Interior Solutions in Doddanekundi, Bangalore. Custom sofas, L-shape sofas, dining chairs, lounge chairs and center tables.">
 
+<style>
 *{
-  box-sizing:border-box;
   margin:0;
   padding:0;
-}
-
-html{
+  box-sizing:border-box;
   scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#071426;
-  color:#fff;
+  font-family:Arial, sans-serif;
+  background:#07152f;
+  color:white;
+  line-height:1.6;
 }
 
 header{
-  background:#0b1d35;
-  padding:22px 15px;
-  text-align:center;
-  border-bottom:2px solid #d4af37;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#07152f;
+  border-bottom:1px solid #c9a227;
+  padding:15px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 .logo{
-  font-size:30px;
-  font-weight:bold;
   color:#d4af37;
-  letter-spacing:2px;
-}
-
-.tagline{
-  margin-top:8px;
-  color:#fff;
-  font-size:15px;
-}
-
-nav{
-  margin-top:18px;
+  font-size:23px;
+  font-weight:bold;
 }
 
 nav a{
-  color:#fff;
+  color:white;
   text-decoration:none;
-  margin:0 8px;
+  margin-left:20px;
   font-weight:bold;
 }
 
@@ -60,436 +54,262 @@ nav a:hover{
 }
 
 .hero{
+  min-height:85vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
-  padding:80px 20px;
-  background:linear-gradient(135deg,#071426,#102542);
+  padding:50px 20px;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+  url("1.jpg") center/cover;
 }
 
 .hero h1{
+  font-size:48px;
   color:#d4af37;
-  font-size:42px;
   margin-bottom:15px;
 }
 
 .hero p{
-  font-size:19px;
+  font-size:21px;
   margin-bottom:25px;
 }
 
 .btn{
   display:inline-block;
+  padding:13px 25px;
+  margin:7px;
   background:#d4af37;
-  color:#071426;
-  padding:14px 24px;
-  margin:8px;
-  border-radius:7px;
+  color:#07152f;
   text-decoration:none;
+  border-radius:30px;
   font-weight:bold;
 }
 
-.btn:hover{
-  opacity:.85;
+.btn.whatsapp{
+  background:#25D366;
+  color:white;
 }
 
 section{
-  padding:55px 20px;
+  padding:65px 5%;
+}
+
+.title{
   text-align:center;
-}
-
-section h2{
   color:#d4af37;
-  font-size:30px;
-  margin-bottom:30px;
+  font-size:32px;
+  margin-bottom:35px;
 }
-
-/* GALLERY */
-
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:22px;
-  max-width:1100px;
-  margin:auto;
-}
-
-.product{
-  background:#102542;
-  border-radius:14px;
-  overflow:hidden;
-  border:1px solid #d4af37;
-  padding-bottom:20px;
-}
-
-.product img{
-  width:100%;
-  height:280px;
-  object-fit:cover;
-  display:block;
-  cursor:pointer;
-}
-
-.product img:hover{
-  opacity:.9;
-}
-
-.product h3{
-  color:#d4af37;
-  margin:18px 10px 8px;
-}
-
-.product p{
-  margin:6px 10px;
-  line-height:1.5;
-}
-
-.price{
-  color:#d4af37;
-  font-weight:bold;
-  margin-top:10px;
-}
-
-/* LIGHTBOX */
-
-.lightbox{
-  display:none;
-  position:fixed;
-  z-index:9999;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,.92);
-  justify-content:center;
-  align-items:center;
-  padding:20px;
-}
-
-.lightbox img{
-  max-width:95%;
-  max-height:85%;
-  object-fit:contain;
-  border-radius:10px;
-}
-
-.close{
-  position:absolute;
-  top:15px;
-  right:25px;
-  font-size:45px;
-  color:#fff;
-  cursor:pointer;
-  line-height:1;
-}
-
-/* ABOUT */
 
 .about{
   max-width:900px;
   margin:auto;
-  line-height:1.9;
-  font-size:17px;
+  text-align:center;
+  font-size:18px;
 }
 
-/* CONTACT */
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#0d2145;
+  border:1px solid #b9962f;
+  border-radius:15px;
+  overflow:hidden;
+  text-align:center;
+  padding-bottom:20px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-7px);
+}
+
+.card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+}
+
+.card h3{
+  color:#d4af37;
+  margin:15px 5px 5px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+}
+
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:12px;
+  border:1px solid #c9a227;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.feature{
+  background:#0d2145;
+  padding:25px;
+  text-align:center;
+  border-radius:15px;
+  border:1px solid #b9962f;
+}
+
+.feature h3{
+  color:#d4af37;
+  margin-bottom:10px;
+}
 
 .contact{
-  line-height:2;
+  text-align:center;
+  background:#050f24;
+}
+
+.contact p{
+  margin:10px 0;
   font-size:17px;
 }
 
-.address{
-  max-width:600px;
-  margin:10px auto 20px;
-  line-height:1.7;
-}
-
-/* FOOTER */
-
 footer{
-  background:#0b1d35;
   text-align:center;
   padding:25px;
-  border-top:1px solid #d4af37;
+  background:#030a18;
+  border-top:1px solid #c9a227;
+  color:#ddd;
 }
 
-@media(max-width:600px){
-
-  .logo{
-    font-size:24px;
-  }
-
-  .hero h1{
-    font-size:31px;
-  }
-
-  .gallery{
-    grid-template-columns:1fr;
-  }
-
-  .product img{
-    height:250px;
+@media(max-width:700px){
+  header{
+    flex-direction:column;
+    gap:10px;
   }
 
   nav a{
-    display:inline-block;
-    margin:6px;
+    margin:0 6px;
+    font-size:14px;
   }
 
-}
+  .hero h1{
+    font-size:34px;
+  }
 
+  .hero p{
+    font-size:17px;
+  }
+}
 </style>
 </head>
 
 <body>
 
 <header>
+  <div class="logo">ICONIC HOME FURNISHINGS</div>
 
-<div class="logo">
-✦ ICONIC HOME FURNISHINGS ✦
-</div>
-
-<p class="tagline">
-Premium Sofa & Interior Solutions
-</p>
-
-<nav>
-<a href="#home">Home</a>
-<a href="#products">Sofas</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-
 <section class="hero" id="home">
+  <div>
+    <h1>Iconic Home Furnishings</h1>
 
-<h1>Luxury Comfort For Your Home</h1>
+    <p>Premium Sofa & Interior Solutions</p>
 
-<p>
-Premium Sofas • Modern Designs • Custom Furniture
-</p>
+    <p>
+      Comfort • Quality • Modern Design
+    </p>
 
-<a class="btn" href="tel:+918123538505">
-📞 Call Now
-</a>
+    <a class="btn" href="#products">View Products</a>
 
-<a class="btn" href="https://wa.me/918123538505?text=Hello%20Iconic%20Home%20Furnishings%2C%20I%20want%20to%20know%20about%20your%20sofas." target="_blank">
-💬 WhatsApp
-</a>
-
-<a class="btn" href="https://maps.app.goo.gl/t9Vygqd4ZsZxuKXp9" target="_blank">
-📍 View Location
-</a>
-
+    <a class="btn whatsapp"
+       href="https://wa.me/918123538505"
+       target="_blank">
+       WhatsApp Us
+    </a>
+  </div>
 </section>
-
-
-<section id="products">
-
-<h2>Our Sofa Collection</h2>
-
-<div class="gallery">
-
-<div class="product">
-<img src="1.jpg" alt="Luxury Sofa Design 1">
-<h3>Luxury Sofa</h3>
-<p>Premium luxury sofa design with comfortable seating.</p>
-<p class="price">Price: Contact for Price</p>
-<a class="btn" href="https://wa.me/918123538505?text=I%20am%20interested%20in%20Sofa%201" target="_blank">Enquire Now</a>
-</div>
-
-<div class="product">
-<img src="2.jpg" alt="Modern Sofa Design 2">
-<h3>Modern Sofa</h3>
-<p>Elegant modern sofa design for beautiful homes.</p>
-<p class="price">Price: Contact for Price</p>
-<a class="btn" href="https://wa.me/918123538505?text=I%20am%20interested%20in%20Sofa%202" target="_blank">Enquire Now</a>
-</div>
-
-<div class="product">
-<img src="3.jpg" alt="Premium Sofa Design 3">
-<h3>Premium Sofa</h3>
-<p>Premium look with stylish and comfortable seating.</p>
-<p class="price">Price: Contact for Price</p>
-<a class="btn" href="https://wa.me/918123538505?text=I%20am%20interested%20in%20Sofa%203" target="_blank">Enquire Now</a>
-</div>
-
-<div class="product">
-<img src="4.jpg" alt="Designer Sofa Design 4">
-<h3>Designer Sofa</h3>
-<p>Stylish designer sofa for a premium living room.</p>
-<p class="price">Price: Contact for Price</p>
-<a class="btn" href="https://wa.me/918123538505?text=I%20am%20interested%20in%20Sofa%204" target="_blank">Enquire Now</a>
-</div>
-
-<div class="product">
-<img src="5.jpg" alt="Comfort Sofa Design 5">
-<h3>Comfort Sofa</h3>
-<p>Designed for everyday comfort, quality and style.</p>
-<p class="price">Price: Contact for Price</p>
-<a class="btn" href="https://wa.me/918123538505?text=I%20am%20interested%20in%20Sofa%205" target="_blank">Enquire Now</a>
-</div>
-
-<div class="product">
-<img src="6.jpg" alt="Custom Sofa Design 6">
-<h3>Custom Sofa</h3>
-<p>Custom furniture solutions designed for your home.</p>
-<p class="price">Price: Contact for Price</p>
-<a class="btn" href="https://wa.me/918123538505?text=I%20am%20interested%20in%20Sofa%206" target="_blank">Enquire Now</a>
-</div>
-
-<div class="product">
-<img src="7.jpg" alt="Modern Comfort Sofa Design 7">
-<h3>Modern Comfort Sofa</h3>
-<p>Beautiful finish with comfortable premium seating.</p>
-<p class="price">Price: Contact for Price</p>
-<a class="btn" href="https://wa.me/918123538505?text=I%20am%20interested%20in%20Sofa%207" target="_blank">Enquire Now</a>
-</div>
-
-<div class="product">
-<img src="8.jpg" alt="Luxury Living Sofa Design 8">
-<h3>Luxury Living Sofa</h3>
-<p>Premium design for stylish living spaces.</p>
-<p class="price">Price: Contact for Price</p>
-<a class="btn" href="https://wa.me/918123538505?text=I%20am%20interested%20in%20Sofa%208" target="_blank">Enquire Now</a>
-</div>
-
-<div class="product">
-<img src="9.jpg" alt="Elegant Sofa Design 9">
-<h3>Elegant Sofa</h3>
-<p>Modern style with a premium appearance.</p>
-<p class="price">Price: Contact for Price</p>
-<a class="btn" href="https://wa.me/918123538505?text=I%20am%20interested%20in%20Sofa%209" target="_blank">Enquire Now</a>
-</div>
-
-<div class="product">
-<img src="10.jpg" alt="Premium Designer Sofa Design 10">
-<h3>Premium Designer Sofa</h3>
-<p>Luxury furniture for a beautiful and comfortable home.</p>
-<p class="price">Price: Contact for Price</p>
-<a class="btn" href="https://wa.me/918123538505?text=I%20am%20interested%20in%20Sofa%2010" target="_blank">Enquire Now</a>
-</div>
-
-</div>
-
-</section>
-
 
 <section id="about">
+  <h2 class="title">About Us</h2>
 
-<h2>Why Choose Iconic Home Furnishings?</h2>
-
-<div class="about">
-
-<p>✓ Premium Quality Materials</p>
-<p>✓ Modern & Luxury Designs</p>
-<p>✓ Custom Furniture</p>
-<p>✓ Affordable Pricing</p>
-<p>✓ Fast Delivery</p>
-
-</div>
-
+  <div class="about">
+    <p>
+      Welcome to <b>Iconic Home Furnishings</b>.
+      We provide premium sofas and interior furniture
+      with modern designs, quality materials and
+      customized solutions for your home.
+    </p>
+  </div>
 </section>
 
+<section id="products">
+  <h2 class="title">Our Products</h2>
 
-<section id="contact">
+  <div class="products">
 
-<h2>Contact Us</h2>
+    <div class="card">
+      <img src="1.jpg" alt="L Shape Sofa">
+      <h3>L-Shape Sofa</h3>
+      <p>Modern & Comfortable</p>
+    </div>
 
-<div class="contact">
+    <div class="card">
+      <img src="2.jpg" alt="Custom Sofa">
+      <h3>Custom Sofa</h3>
+      <p>Made According to Your Choice</p>
+    </div>
 
-<p>📞 <strong>8123538505</strong></p>
+    <div class="card">
+      <img src="3.jpg" alt="Dining Chairs">
+      <h3>Dining Chairs</h3>
+      <p>Elegant & Premium</p>
+    </div>
 
-<div class="address">
-<p>📍 Shop No. 2, 4th Cross, Doddanekundi</p>
-<p>Marathahalli Main Road, Bangalore</p>
-<p>Karnataka - 560037</p>
-</div>
+    <div class="card">
+      <img src="4.jpg" alt="Lounge Chair">
+      <h3>Lounge Chairs</h3>
+      <p>Luxury & Comfort</p>
+    </div>
 
-<p>🛋️ Premium Sofa & Interior Solutions</p>
+    <div class="card">
+      <img src="5.jpg" alt="Center Table">
+      <h3>Center Tables</h3>
+      <p>Modern Designs</p>
+    </div>
 
-</div>
+    <div class="card">
+      <img src="6.jpg" alt="Sofa Accessories">
+      <h3>Sofa Accessories</h3>
+      <p>Quality Accessories</p>
+    </div>
 
-<br>
-
-<a class="btn" href="tel:+918123538505">
-📞 Call Now
-</a>
-
-<a class="btn" href="https://wa.me/918123538505?text=Hello%20Iconic%20Home%20Furnishings%2C%20I%20want%20to%20order%20a%20sofa." target="_blank">
-💬 Order on WhatsApp
-</a>
-
-<br>
-
-<a class="btn" href="https://maps.app.goo.gl/t9Vygqd4ZsZxuKXp9" target="_blank">
-📍 Get Directions
-</a>
-
+  </div>
 </section>
 
+<section id="gallery">
+  <h2 class="title">Our Sofa Gallery</h2>
 
-<footer>
-
-<p>© 2026 Iconic Home Furnishings</p>
-<p>Premium Sofa & Interior Solutions</p>
-
-</footer>
-
-
-<!-- PHOTO LIGHTBOX -->
-
-<div class="lightbox" id="lightbox">
-
-<span class="close" onclick="closeLightbox()">×</span>
-
-<img id="lightboxImg" src="" alt="Sofa Photo">
-
-</div>
-
-
-<script>
-
-const galleryImages = document.querySelectorAll(".product img");
-
-const lightbox = document.getElementById("lightbox");
-
-const lightboxImg = document.getElementById("lightboxImg");
-
-
-galleryImages.forEach(function(img){
-
-  img.addEventListener("click",function(){
-
-    lightbox.style.display="flex";
-
-    lightboxImg.src=this.src;
-
-  });
-
-});
-
-
-function closeLightbox(){
-
-  lightbox.style.display="none";
-
-}
-
-
-lightbox.addEventListener("click",function(e){
-
-  if(e.target === lightbox){
-
-    closeLightbox();
-
-  }
-
-});
-
-
-</script>
-
-</body>
-</html>
+  <div class="gallery">
+    <img src="1.jpg" alt="Sofa 1">
+    <img src="2.jpg" alt="Sofa 2">
+    <img src="3.jpg" alt="Sofa 3">
+    <img src="4.jpg" alt
