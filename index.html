@@ -7,7 +7,7 @@
 <title>Iconic Home Furnishings | Premium Sofa & Interior Solutions</title>
 
 <meta name="description"
-content="Iconic Home Furnishings - Premium Sofa & Interior Solutions in Doddanekundi, Bangalore. Custom sofas, L-shape sofas, dining chairs, lounge chairs and center tables.">
+content="Iconic Home Furnishings - Premium Sofa & Interior Solutions in Doddanekundi, Bangalore.">
 
 <style>
 *{
@@ -18,7 +18,7 @@ content="Iconic Home Furnishings - Premium Sofa & Interior Solutions in Doddanek
 }
 
 body{
-  font-family:Arial, sans-serif;
+  font-family:Arial,sans-serif;
   background:#07152f;
   color:white;
   line-height:1.6;
@@ -29,7 +29,7 @@ header{
   top:0;
   z-index:1000;
   background:#07152f;
-  border-bottom:1px solid #c9a227;
+  border-bottom:1px solid #d4af37;
   padding:15px 5%;
   display:flex;
   justify-content:space-between;
@@ -60,9 +60,10 @@ nav a:hover{
   justify-content:center;
   text-align:center;
   padding:50px 20px;
+
   background:
-  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-  url("1.jpg") center/cover;
+  linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.62)),
+  url("product-1.jpg") center/cover;
 }
 
 .hero h1{
@@ -73,7 +74,7 @@ nav a:hover{
 
 .hero p{
   font-size:21px;
-  margin-bottom:25px;
+  margin-bottom:20px;
 }
 
 .btn{
@@ -92,7 +93,7 @@ nav a:hover{
   color:white;
 }
 
-section{</section>
+section{
   padding:65px 5%;
 }
 
@@ -134,6 +135,7 @@ section{</section>
   width:100%;
   height:230px;
   object-fit:cover;
+  display:block;
 }
 
 .card h3{
@@ -151,8 +153,14 @@ section{</section>
   width:100%;
   height:220px;
   object-fit:cover;
+  display:block;
   border-radius:12px;
   border:1px solid #c9a227;
+  transition:.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.03);
 }
 
 .features{
@@ -193,6 +201,7 @@ footer{
 }
 
 @media(max-width:700px){
+
   header{
     flex-direction:column;
     gap:10px;
@@ -210,6 +219,7 @@ footer{
   .hero p{
     font-size:17px;
   }
+
 }
 </style>
 </head>
@@ -217,110 +227,281 @@ footer{
 <body>
 
 <header>
-  <div class="logo">ICONIC HOME FURNISHINGS</div>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<div class="logo">
+ICONIC HOME FURNISHINGS
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#gallery">Gallery</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
+
 <section class="hero" id="home">
-  <div>
-    <h1>Iconic Home Furnishings</h1>
 
-    <p>Premium Sofa & Interior Solutions</p>
+<div>
 
-    <p>
-      Comfort • Quality • Modern Design
-    </p>
+<h1>Iconic Home Furnishings</h1>
 
-    <a class="btn" href="#products">View Products</a>
+<p>Premium Sofa & Interior Solutions</p>
 
-    <a class="btn whatsapp"
-       href="https://wa.me/918123538505"
-       target="_blank">
-       WhatsApp Us
-    </a>
-  </div>
+<p>Comfort • Quality • Modern Design</p>
+
+<a class="btn" href="#products">
+View Products
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/918123538505"
+target="_blank">
+WhatsApp Us
+</a>
+
+</div>
+
 </section>
+
 
 <section id="about">
-  <h2 class="title">About Us</h2>
 
-  <div class="about">
-    <p>
-      Welcome to <b>Iconic Home Furnishings</b>.
-      We provide premium sofas and interior furniture
-      with modern designs, quality materials and
-      customized solutions for your home.
-    </p>
-  </div>
+<h2 class="title">
+About Us
+</h2>
+
+<div class="about">
+
+<p>
+Welcome to <b>Iconic Home Furnishings</b>.
+We provide premium sofas and interior furniture
+with modern designs, quality materials and
+customized solutions for your home.
+</p>
+
+</div>
+
 </section>
+
 
 <section id="products">
-  <h2 class="title">Our Products</h2>
 
-  <div class="products">
+<h2 class="title">
+Our Products
+</h2>
 
-    <div class="card">
-      <img src="1.jpg" alt="L Shape Sofa">
-      <h3>L-Shape Sofa</h3>
-      <p>Modern & Comfortable</p>
-    </div>
+<div class="products">
 
-    <div class="card">
-      <img src="2.jpg" alt="Custom Sofa">
-      <h3>Custom Sofa</h3>
-      <p>Made According to Your Choice</p>
-    </div>
 
-    <div class="card">
-      <img src="3.jpg" alt="Dining Chairs">
-      <h3>Dining Chairs</h3>
-      <p>Elegant & Premium</p>
-    </div>
+<div class="card">
 
-    <div class="card">
-      <img src="4.jpg" alt="Lounge Chair">
-      <h3>Lounge Chairs</h3>
-      <p>Luxury & Comfort</p>
-    </div>
+<img src="product-1.jpg" alt="L Shape Sofa">
 
-    <div class="card">
-      <img src="5.jpg" alt="Center Table">
-      <h3>Center Tables</h3>
-      <p>Modern Designs</p>
-    </div>
+<h3>L-Shape Sofa</h3>
 
-    <div class="card">
-      <img src="6.jpg" alt="Sofa Accessories">
-      <h3>Sofa Accessories</h3>
-      <p>Quality Accessories</p>
-    </div>
+<p>Modern & Comfortable</p>
 
-  </div>
+</div>
+
+
+<div class="card">
+
+<img src="product-2.jpg" alt="Custom Sofa">
+
+<h3>Custom Sofa</h3>
+
+<p>Made According to Your Choice</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="product-3.jpg" alt="Dining Chairs">
+
+<h3>Dining Chairs</h3>
+
+<p>Elegant & Premium</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="product-4.jpg" alt="Lounge Chair">
+
+<h3>Lounge Chairs</h3>
+
+<p>Luxury & Comfort</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="product-5.jpg" alt="Center Table">
+
+<h3>Center Tables</h3>
+
+<p>Modern Designs</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="product-6.jpg" alt="Sofa Accessories">
+
+<h3>Sofa Accessories</h3>
+
+<p>Quality Accessories</p>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="gallery">
-  <h2 class="title">Our Sofa Gallery</h2>
 
-  <div class="gallery"><div class="gallery">
-  <img src="1.jpg" alt="Sofa 1">
-  <img src="2.jpg" alt="Sofa 2">
-  <img src="3.jpg" alt="Sofa 3">
-  <img src="4.jpg" alt="Sofa 4">
-  <img src="5.jpg" alt="Sofa 5">
-  <img src="6.jpg" alt="Sofa 6">
-  <img src="7.jpg" alt="Sofa 7">
-  <img src="8.jpg" alt="Sofa 8">
-  <img src="9.jpg" alt="Sofa 9">
-  <img src="10.jpg" alt="Sofa 10">
-  </div>
-    <img src="1.jpg" alt="Sofa 1">
-    <img src="2.jpg" alt="Sofa 2">
-    <img src="3.jpg" alt="Sofa 3">
-    <img src="4.jpg" alt
+<section id="gallery">
+
+<h2 class="title">
+Our Sofa Gallery
+</h2>
+
+<div class="gallery">
+
+<img src="product-1.jpg" alt="Sofa 1">
+
+<img src="product-2.jpg" alt="Sofa 2">
+
+<img src="product-3.jpg" alt="Sofa 3">
+
+<img src="product-4.jpg" alt="Sofa 4">
+
+<img src="product-5.jpg" alt="Sofa 5">
+
+<img src="product-6.jpg" alt="Sofa 6">
+
+<img src="product-7.jpg" alt="Sofa 7">
+
+<img src="product-8.jpg" alt="Sofa 8">
+
+<img src="product-9.jpg" alt="Sofa 9">
+
+<img src="product-10.jpg" alt="Sofa 10">
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2 class="title">
+Why Choose Us?
+</h2>
+
+<div class="features">
+
+
+<div class="feature">
+
+<h3>Premium Quality</h3>
+
+<p>
+Quality materials and excellent finishing.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>Modern Designs</h3>
+
+<p>
+Stylish furniture for modern homes.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>Custom Furniture</h3>
+
+<p>
+Furniture made according to your requirements.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>Affordable Pricing</h3>
+
+<p>
+Premium quality at reasonable prices.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<h2 class="title">
+Contact Us
+</h2>
+
+<p>
+<b>📞 Phone / WhatsApp:</b>
++91 81235 38505
+</p>
+
+<p>
+
+<b>📍 Address:</b><br>
+
+Shop No. 2, 4th Cross,<br>
+Doddanekundi, Marathahalli Main Road,<br>
+Bangalore, Karnataka - 560037
+
+</p>
+
+<br>
+
+<a class="btn whatsapp"
+href="https://wa.me/918123538505"
+target="_blank">
+
+Chat on WhatsApp
+
+</a>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 Iconic Home Furnishings
+</p>
+
+<p>
+Premium Sofa & Interior Solutions
+</p>
+
+</footer>
+
+</body>
+</html>
