@@ -60,7 +60,6 @@ nav a:hover{
   justify-content:center;
   text-align:center;
   padding:50px 20px;
-
   background:
   linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.62)),
   url("product-1.jpg") center/cover;
@@ -91,6 +90,16 @@ nav a:hover{
 .btn.whatsapp{
   background:#25D366;
   color:white;
+}
+
+.btn.call{
+  background:#1877f2;
+  color:white;
+}
+
+.btn.map{
+  background:#d4af37;
+  color:#07152f;
 }
 
 section{
@@ -136,6 +145,7 @@ section{
   height:230px;
   object-fit:cover;
   display:block;
+  cursor:pointer;
 }
 
 .card h3{
@@ -156,6 +166,7 @@ section{
   display:block;
   border-radius:12px;
   border:1px solid #c9a227;
+  cursor:pointer;
   transition:.3s;
 }
 
@@ -200,6 +211,71 @@ footer{
   color:#ddd;
 }
 
+/* PHOTO POPUP */
+
+.lightbox{
+  display:none;
+  position:fixed;
+  z-index:3000;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.94);
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.lightbox img{
+  max-width:95%;
+  max-height:90vh;
+  border-radius:12px;
+  box-shadow:0 0 30px rgba(212,175,55,.5);
+}
+
+.close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  color:white;
+  font-size:40px;
+  cursor:pointer;
+}
+
+/* FLOATING BUTTONS */
+
+.floating{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:2000;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.float-btn{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  color:white;
+  font-size:25px;
+  box-shadow:0 4px 15px rgba(0,0,0,.4);
+}
+
+.float-whatsapp{
+  background:#25D366;
+}
+
+.float-call{
+  background:#1877f2;
+}
+
 @media(max-width:700px){
 
   header{
@@ -218,6 +294,14 @@ footer{
 
   .hero p{
     font-size:17px;
+  }
+
+  .gallery{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .gallery img{
+    height:170px;
   }
 
 }
@@ -296,70 +380,40 @@ Our Products
 
 <div class="products">
 
-
 <div class="card">
-
-<img src="product-1.jpg" alt="L Shape Sofa">
-
+<img src="product-1.jpg" alt="L Shape Sofa" onclick="openPhoto(this.src)">
 <h3>L-Shape Sofa</h3>
-
 <p>Modern & Comfortable</p>
-
 </div>
 
-
 <div class="card">
-
-<img src="product-2.jpg" alt="Custom Sofa">
-
+<img src="product-2.jpg" alt="Custom Sofa" onclick="openPhoto(this.src)">
 <h3>Custom Sofa</h3>
-
 <p>Made According to Your Choice</p>
-
 </div>
 
-
 <div class="card">
-
-<img src="product-3.jpg" alt="Dining Chairs">
-
+<img src="product-3.jpg" alt="Dining Chairs" onclick="openPhoto(this.src)">
 <h3>Dining Chairs</h3>
-
 <p>Elegant & Premium</p>
-
 </div>
 
-
 <div class="card">
-
-<img src="product-4.jpg" alt="Lounge Chair">
-
+<img src="product-4.jpg" alt="Lounge Chair" onclick="openPhoto(this.src)">
 <h3>Lounge Chairs</h3>
-
 <p>Luxury & Comfort</p>
-
 </div>
 
-
 <div class="card">
-
-<img src="product-5.jpg" alt="Center Table">
-
+<img src="product-5.jpg" alt="Center Table" onclick="openPhoto(this.src)">
 <h3>Center Tables</h3>
-
 <p>Modern Designs</p>
-
 </div>
 
-
 <div class="card">
-
-<img src="product-6.jpg" alt="Sofa Accessories">
-
+<img src="product-6.jpg" alt="Sofa Accessories" onclick="openPhoto(this.src)">
 <h3>Sofa Accessories</h3>
-
 <p>Quality Accessories</p>
-
 </div>
 
 </div>
@@ -375,25 +429,16 @@ Our Sofa Gallery
 
 <div class="gallery">
 
-<img src="product-1.jpg" alt="Sofa 1">
-
-<img src="product-2.jpg" alt="Sofa 2">
-
-<img src="product-3.jpg" alt="Sofa 3">
-
-<img src="product-4.jpg" alt="Sofa 4">
-
-<img src="product-5.jpg" alt="Sofa 5">
-
-<img src="product-6.jpg" alt="Sofa 6">
-
-<img src="product-7.jpg" alt="Sofa 7">
-
-<img src="product-8.jpg" alt="Sofa 8">
-
-<img src="product-9.jpg" alt="Sofa 9">
-
-<img src="product-10.jpg" alt="Sofa 10">
+<img src="product-1.jpg" alt="Sofa 1" onclick="openPhoto(this.src)">
+<img src="product-2.jpg" alt="Sofa 2" onclick="openPhoto(this.src)">
+<img src="product-3.jpg" alt="Sofa 3" onclick="openPhoto(this.src)">
+<img src="product-4.jpg" alt="Sofa 4" onclick="openPhoto(this.src)">
+<img src="product-5.jpg" alt="Sofa 5" onclick="openPhoto(this.src)">
+<img src="product-6.jpg" alt="Sofa 6" onclick="openPhoto(this.src)">
+<img src="product-7.jpg" alt="Sofa 7" onclick="openPhoto(this.src)">
+<img src="product-8.jpg" alt="Sofa 8" onclick="openPhoto(this.src)">
+<img src="product-9.jpg" alt="Sofa 9" onclick="openPhoto(this.src)">
+<img src="product-10.jpg" alt="Sofa 10" onclick="openPhoto(this.src)">
 
 </div>
 
@@ -408,48 +453,24 @@ Why Choose Us?
 
 <div class="features">
 
-
 <div class="feature">
-
 <h3>Premium Quality</h3>
-
-<p>
-Quality materials and excellent finishing.
-</p>
-
+<p>Quality materials and excellent finishing.</p>
 </div>
 
-
 <div class="feature">
-
 <h3>Modern Designs</h3>
-
-<p>
-Stylish furniture for modern homes.
-</p>
-
+<p>Stylish furniture for modern homes.</p>
 </div>
 
-
 <div class="feature">
-
 <h3>Custom Furniture</h3>
-
-<p>
-Furniture made according to your requirements.
-</p>
-
+<p>Furniture made according to your requirements.</p>
 </div>
 
-
 <div class="feature">
-
 <h3>Affordable Pricing</h3>
-
-<p>
-Premium quality at reasonable prices.
-</p>
-
+<p>Premium quality at reasonable prices.</p>
 </div>
 
 </div>
@@ -483,12 +504,53 @@ Bangalore, Karnataka - 560037
 <a class="btn whatsapp"
 href="https://wa.me/918123538505"
 target="_blank">
-
 Chat on WhatsApp
+</a>
 
+<a class="btn call"
+href="tel:+918123538505">
+Call Now
+</a>
+
+<a class="btn map"
+href="https://www.google.com/maps/search/?api=1&query=Shop+No+2+4th+Cross+Doddanekundi+Marathahalli+Main+Road+Bangalore+Karnataka+560037"
+target="_blank">
+Open Google Maps
 </a>
 
 </section>
+
+
+<!-- PHOTO POPUP -->
+
+<div class="lightbox" id="lightbox" onclick="closePhoto()">
+
+<span class="close">&times;</span>
+
+<img id="lightboxImage" src="" alt="Large Sofa Photo"
+onclick="event.stopPropagation()">
+
+</div>
+
+
+<!-- FLOATING BUTTONS -->
+
+<div class="floating">
+
+<a class="float-btn float-whatsapp"
+href="https://wa.me/918123538505"
+target="_blank"
+title="WhatsApp">
+💬
+</a>
+
+<a class="float-btn float-call"
+href="tel:+918123538505"
+title="Call">
+📞
+</a>
+
+</div>
 
 
 <footer>
@@ -502,6 +564,33 @@ Premium Sofa & Interior Solutions
 </p>
 
 </footer>
+
+
+<script>
+
+function openPhoto(src){
+
+  document.getElementById("lightboxImage").src = src;
+
+  document.getElementById("lightbox").style.display = "flex";
+
+}
+
+function closePhoto(){
+
+  document.getElementById("lightbox").style.display = "none";
+
+}
+
+document.addEventListener("keydown", function(event){
+
+  if(event.key === "Escape"){
+    closePhoto();
+  }
+
+});
+
+</script>
 
 </body>
 </html>
