@@ -5,7 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Iconic Home Furnishings | Premium Sofa & Interior Solutions</title>
+.gallery img{
+cursor:pointer;
+transition:0.3s;
+}
 
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.lightbox{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.lightbox img{
+max-width:95%;
+max-height:90%;
+object-fit:contain;
+border-radius:10px;
+}
+
+.close{
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
 <style>
 *{.gallery{
 display:grid;
@@ -35,7 +72,33 @@ transition:0.3s;
 html{
   scroll-behavior:smooth;
 }
+<div class="lightbox" id="lightbox">
+<span class="close" onclick="closeLightbox()">×</span>
+<img id="lightboxImg" src="" alt="Sofa Photo">
+</div>
 
+<script>
+const galleryImages = document.querySelectorAll(".gallery img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+
+galleryImages.forEach(function(img){
+img.addEventListener("click", function(){
+lightbox.style.display = "flex";
+lightboxImg.src = this.src;
+});
+});
+
+function closeLightbox(){
+lightbox.style.display = "none";
+}
+
+lightbox.addEventListener("click", function(e){
+if(e.target === lightbox){
+closeLightbox();
+}
+});
+</script>
 body{
   font-family:Arial,sans-serif;
   background:#071426;
