@@ -1,1 +1,898 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Iconic Home Furnishings | Premium Sofas & Furniture in Bengaluru</title>
+
+<meta name="description" content="Iconic Home Furnishings in Doddanekundi, Bengaluru offers premium sofas, L-Shape sofas, recliners, custom sofas, dining tables and modern furniture.">
+
+<meta name="keywords" content="sofa shop Doddanekundi, sofa shop Bengaluru, L Shape sofa Bengaluru, recliner sofa, custom sofa, furniture Marathahalli">
+
+<meta name="theme-color" content="#07152d">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#07152d;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:16px 5%;
+
+    background:#07152d;
+    border-bottom:1px solid #c9a227;
+}
+
+.logo{
+    color:#d8b84c;
+    font-size:19px;
+    font-weight:800;
+    letter-spacing:.5px;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#d8b84c;
+}
+
+.menu-btn{
+    display:none;
+    background:transparent;
+    color:#d8b84c;
+    border:1px solid #d8b84c;
+    border-radius:6px;
+    padding:7px 11px;
+    font-size:20px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:78vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:70px 6%;
+
+    background:
+    radial-gradient(circle at top,#1c3b6b,#07152d 65%);
+}
+
+.hero-content{
+    max-width:950px;
+}
+
+.badge{
+    display:inline-block;
+    padding:7px 18px;
+    border:1px solid #c9a227;
+    border-radius:30px;
+    color:#d8b84c;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(40px,7vw,76px);
+    line-height:1.05;
+    color:#d8b84c;
+    margin-bottom:20px;
+}
+
+.hero-main{
+    font-size:clamp(19px,3vw,28px);
+    margin-bottom:8px;
+}
+
+.hero-tagline{
+    color:#e8dfbf;
+    margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 24px;
+    border-radius:7px;
+    background:#d8b84c;
+    color:#07152d;
+    border:1px solid #d8b84c;
+    text-decoration:none;
+    font-weight:800;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn.secondary{
+    background:transparent;
+    color:#fff;
+}
+
+/* SECTIONS */
+
+section{
+    padding:70px 6%;
+    text-align:center;
+}
+
+h2{
+    color:#d8b84c;
+    font-size:clamp(30px,4vw,42px);
+    margin-bottom:15px;
+}
+
+.section-sub{
+    max-width:800px;
+    margin:0 auto 35px;
+    color:#d8dfeb;
+}
+
+/* ABOUT */
+
+.intro{
+    max-width:850px;
+    margin:auto;
+    color:#e4e9f1;
+    font-size:17px;
+}
+
+/* PRODUCT CARDS */
+
+.cards{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:linear-gradient(145deg,#14345d,#0c203b);
+
+    border:1px solid #8f741d;
+    border-radius:14px;
+
+    padding:28px 20px;
+
+    transition:.3s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#d8b84c;
+}
+
+.card-icon{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    color:#d8b84c;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#dce3ed;
+}
+
+/* GALLERY */
+
+.gallery{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    background:#102747;
+
+    border:1px solid #8f741d;
+    border-radius:14px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.gallery img{
+    width:100%;
+    height:260px;
+
+    object-fit:cover;
+    display:block;
+
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.gallery-title{
+    padding:12px;
+    color:#d8b84c;
+    font-weight:bold;
+}
+
+/* REVIEWS */
+
+.reviews{
+    max-width:950px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:18px;
+}
+
+.review{
+    background:#102747;
+    border:1px solid #8f741d;
+    border-radius:14px;
+    padding:23px;
+    text-align:left;
+}
+
+.stars{
+    color:#d8b84c;
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.review strong{
+    display:block;
+    margin-top:12px;
+}
+
+/* LOCATION */
+
+.location-box{
+    max-width:850px;
+    margin:auto;
+
+    background:#102747;
+    border:1px solid #c9a227;
+    border-radius:14px;
+
+    padding:30px;
+}
+
+.location-box h3{
+    color:#d8b84c;
+    margin-bottom:15px;
+}
+
+.map{
+    width:100%;
+    height:300px;
+
+    border:0;
+    border-radius:12px;
+
+    margin:20px 0 22px;
+}
+
+/* CONTACT */
+
+.contact-grid{
+    max-width:900px;
+    margin:0 auto 25px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+}
+
+.contact-item{
+    background:#102747;
+    border:1px solid #8f741d;
+    border-radius:12px;
+    padding:22px;
+}
+
+.contact-item span{
+    display:block;
+    color:#d8b84c;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+
+    right:18px;
+    bottom:18px;
+
+    z-index:999;
+
+    background:#25D366;
+    color:#fff;
+
+    padding:13px 19px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+    font-weight:800;
+
+    box-shadow:0 4px 18px rgba(0,0,0,.35);
+}
+
+/* FOOTER */
+
+footer{
+    padding:28px 20px;
+
+    text-align:center;
+
+    background:#050e1d;
+
+    border-top:1px solid #c9a227;
+
+    color:#dce3ed;
+}
+
+/* MOBILE */
+
+@media(max-width:760px){
+
+    header{
+        padding:14px 5%;
+    }
+
+    .logo{
+        font-size:15px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    nav{
+        display:none;
+
+        position:absolute;
+
+        top:64px;
+        left:0;
+        right:0;
+
+        background:#07152d;
+
+        border-bottom:1px solid #c9a227;
+
+        flex-direction:column;
+
+        padding:18px 5%;
+        gap:15px;
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    .hero{
+        min-height:70vh;
+        padding:55px 5%;
+    }
+
+    section{
+        padding:55px 5%;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .gallery img{
+        height:240px;
+    }
+
+    .whatsapp{
+        right:12px;
+        bottom:12px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+ICONIC HOME FURNISHINGS
+</div>
+
+<button class="menu-btn"
+onclick="toggleMenu()"
+aria-label="Open Menu">
+☰
+</button>
+
+<nav id="navigation">
+
+<a href="#home" onclick="closeMenu()">Home</a>
+<a href="#products" onclick="closeMenu()">Products</a>
+<a href="#gallery" onclick="closeMenu()">Gallery</a>
+<a href="#about" onclick="closeMenu()">About</a>
+<a href="#location" onclick="closeMenu()">Location</a>
+<a href="#contact" onclick="closeMenu()">Contact</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">
+Premium Sofas & Modern Furniture
+</div>
+
+<h1>
+Iconic Home Furnishings
+</h1>
+
+<p class="hero-main">
+Premium Sofas & Furniture in Bengaluru
+</p>
+
+<p class="hero-tagline">
+Comfort • Quality • Modern Design
+</p>
+
+<div class="buttons">
+
+<a class="btn" href="#products">
+🛋️ View Products
+</a>
+
+<a class="btn secondary"
+href="https://wa.me/918123538505?text=Hello%20Iconic%20Home%20Furnishings,%20I%20am%20interested%20in%20your%20sofas%20and%20furniture.">
+💬 WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>
+About Iconic Home Furnishings
+</h2>
+
+<p class="intro">
+
+Welcome to Iconic Home Furnishings, your destination for premium sofas and modern furniture in Doddanekundi, Bengaluru.
+
+<br><br>
+
+We offer stylish, comfortable and durable furniture with quality materials, excellent finishing and customized solutions for modern homes and interiors.
+
+</p>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<h2>
+Our Premium Furniture Collection
+</h2>
+
+<p class="section-sub">
+Choose your preferred design, size, fabric and finish.
+Custom furniture solutions are also available.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<div class="card-icon">🛋️</div>
+<h3>L-Shape Sofa</h3>
+<p>Luxury and spacious L-Shape sofas with custom sizes, colours and premium finishing.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🛋️</div>
+<h3>3-Seater Sofa</h3>
+<p>Elegant 3-seater sofas designed for comfort, durability and modern interiors.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🛋️</div>
+<h3>3+2+2 Sofa Set</h3>
+<p>Premium sofa set offering spacious seating and sophisticated modern design.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🪑</div>
+<h3>Recliner Sofa</h3>
+<p>Premium recliner sofas designed for relaxing comfort and stylish living rooms.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">✨</div>
+<h3>Custom Sofa</h3>
+<p>Custom-made sofas according to your preferred size, fabric, colour and design.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🛋️</div>
+<h3>Sofa Combo</h3>
+<p>Modern sofa combinations with premium comfort and elegant finishing.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🍽️</div>
+<h3>Dining Table</h3>
+<p>Modern dining tables with strong construction and premium finishing.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">✨</div>
+<h3>Centre Table</h3>
+<p>Stylish centre tables designed to complement premium living-room interiors.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🪑</div>
+<h3>Boss Chair</h3>
+<p>Comfortable and elegant executive chairs for offices and premium interiors.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2>
+Our Sofa Gallery
+</h2>
+
+<p class="section-sub">
+Explore our premium sofa and furniture collection.
+</p>
+
+<div class="gallery">
+
+<div class="gallery-item">
+<img src="product-1.jpg"
+alt="Premium sofa in Bengaluru"
+loading="lazy">
+<div class="gallery-title">Premium Sofa</div>
+</div>
+
+<div class="gallery-item">
+<img src="product-2.jpg"
+alt="L Shape sofa in Bengaluru"
+loading="lazy">
+<div class="gallery-title">L-Shape Sofa</div>
+</div>
+
+<div class="gallery-item">
+<img src="product-3.jpg"
+alt="Modern sofa design in Bengaluru"
+loading="lazy">
+<div class="gallery-title">Modern Sofa</div>
+</div>
+
+<div class="gallery-item">
+<img src="product-4.jpg"
+alt="Luxury sofa set"
+loading="lazy">
+<div class="gallery-title">Luxury Sofa Set</div>
+</div>
+
+<div class="gallery-item">
+<img src="product-5.jpg"
+alt="Custom sofa design"
+loading="lazy">
+<div class="gallery-title">Custom Sofa</div>
+</div>
+
+<div class="gallery-item">
+<img src="product-6.jpg"
+alt="Premium furniture"
+loading="lazy">
+<div class="gallery-title">Premium Furniture</div>
+</div>
+
+<div class="gallery-item">
+<img src="product-7.jpg"
+alt="Modern living room sofa"
+loading="lazy">
+<div class="gallery-title">Modern Living Room Sofa</div>
+</div>
+
+<div class="gallery-item">
+<img src="product-8.jpg"
+alt="Elegant sofa design"
+loading="lazy">
+<div class="gallery-title">Elegant Sofa Design</div>
+</div>
+
+<div class="gallery-item">
+<img src="product-9.jpg"
+alt="Iconic Home Furnishings sofa"
+loading="lazy">
+<div class="gallery-title">Iconic Sofa Collection</div>
+</div>
+
+<div class="gallery-item">
+<img src="product-10.jpg"
+alt="Premium furniture in Bengaluru"
+loading="lazy">
+<div class="gallery-title">Premium Furniture Collection</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section>
+
+<h2>
+Why Choose Us?
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="card-icon">⭐</div>
+<h3>Premium Quality</h3>
+<p>Quality materials and excellent finishing.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">✨</div>
+<h3>Modern Designs</h3>
+<p>Stylish furniture for modern homes.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📐</div>
+<h3>Custom Furniture</h3>
+<p>Furniture made according to your requirements.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🤝</div>
+<h3>Trusted Service</h3>
+<p>Customer-focused service and quality craftsmanship.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section>
+
+<h2>
+What Our Customers Say
+</h2>
+
+<div class="reviews">
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>Very good service and quality furniture.</p>
+<strong>Happy Customer</strong>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>Nice service and excellent finishing.</p>
+<strong>Happy Customer</strong>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>Best sofa under the budget. Highly recommended.</p>
+<strong>Happy Customer</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- LOCATION -->
+
+<section id="location">
+
+<h2>
+Visit Our Showroom
+</h2>
+
+<div class="location-box">
+
+<h3>
+Iconic Home Furnishings
+</h3>
+
+<p>
+Shop No. 2, 4th Cross,<br>
+Doddanekundi, Marathahalli Main Road,<br>
+Bengaluru, Karnataka - 560037
+</p>
+
+<iframe
+class="map"
+loading="lazy"
+src="https://www.google.com/maps?q=Iconic%20Home%20Furnishings%20Doddanekundi%20Bengaluru&output=embed"
+title="Iconic Home Furnishings Location">
+</iframe>
+
+<a class="btn"
+href="https://www.google.com/maps/search/?api=1&query=Iconic%20Home%20Furnishings%20Doddanekundi%20Bengaluru">
+📍 Get Directions
+</a>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>
+Contact Us
+</h2>
+
+<div class="contact-grid">
+
+<div class="contact-item">
+<span>📞 Phone / WhatsApp</span>
++91 81235 38505
+</div>
+
+<div class="contact-item">
+<span>📍 Location</span>
+Doddanekundi, Bengaluru - 560037
+</div>
+
+<div class="contact-item">
+<span>🛋️ Speciality</span>
+Premium & Custom Sofas
+</div>
+
+</div>
+
+<div class="buttons">
+
+<a class="btn"
+href="tel:+918123538505">
+📞 Call Now
+</a>
+
+<a class="btn secondary"
+href="https://wa.me/918123538505?text=Hello%20Iconic%20Home%20Furnishings,%20I%20would%20like%20to%20know%20more%20about%20your%20furniture.">
+💬 WhatsApp
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="whatsapp"
+href="https://wa.me/918123538505?text=Hello%20Iconic%20Home%20Furnishings,%20I%20am%20interested%20in%20your%20sofas.">
+💬 WhatsApp
+</a>
+
+<footer>
+
+© 2026 Iconic Home Furnishings
+<br>
+Premium Sofa & Interior Solutions
+<br>
+Comfort • Quality • Modern Design
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+
+document
+.getElementById("navigation")
+.classList
+.toggle("active");
+
+}
+
+function closeMenu(){
+
+document
+.getElementById("navigation")
+.classList
+.remove("active");
+
+}
+
+</script>
+
+</body>
+</html>
