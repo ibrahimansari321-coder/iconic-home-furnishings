@@ -1,3 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Iconic Home Furnishings | Premium Sofas & Furniture in Bengaluru</title>
+
+<meta name="description" content="Iconic Home Furnishings in Doddanekundi, Bengaluru offers premium sofas, L-Shape sofas, recliners, custom sofas, dining tables and modern furniture.">
+
+<meta name="keywords" content="sofa shop Doddanekundi, sofa shop Bengaluru, L Shape sofa Bengaluru, recliner sofa, custom sofa, furniture Marathahalli">
+
+<meta name="theme-color" content="#07152d">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#07152d;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 5%;
+    background:#07152d;
+    border-bottom:1px solid #c9a227;
+}
+
+.logo{
+    color:#d8b84c;
+    font-size:19px;
+    font-weight:800;
+    letter-spacing:.5px;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#d8b84c;
+}
+
+.menu-btn{
+    display:none;
+    background:transparent;
+    color:#d8b84c;
+    border:1px solid #d8b84c;
+    border-radius:6px;
+    padding:7px 11px;
+    font-size:20px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:78vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:70px 6%;
+    background:radial-gradient(circle at top,#1c3b6b,#07152d 65%);
+}
+
+.hero-content{
+    max-width:950px;
+}
+
+.badge{
+    display:inline-block;
+    padding:7px 18px;
+    border:1px solid #c9a227;
+    border-radius:30px;
+    color:#d8b84c;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(40px,7vw,76px);
+    line-height:1.05;
+    color:#d8b84c;
+    margin-bottom:20px;
+}
 
 .hero-main{
     font-size:clamp(19px,3vw,28px);
@@ -72,7 +183,6 @@ h2{
 .cards{
     max-width:1150px;
     margin:auto;
-
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
@@ -80,14 +190,10 @@ h2{
 
 .card{
     background:linear-gradient(145deg,#14345d,#0c203b);
-
     border:1px solid #8f741d;
     border-radius:14px;
-
     padding:28px 20px;
-
     transition:.3s;
-
     box-shadow:0 8px 25px rgba(0,0,0,.2);
 }
 
@@ -113,31 +219,25 @@ h2{
 /* GALLERY */
 
 .gallery{
-    max-width:1200px;
+    max-width:1150px;
     margin:auto;
-
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
 }
 
 .gallery-item{
     overflow:hidden;
     background:#102747;
-
     border:1px solid #8f741d;
     border-radius:14px;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.25);
 }
 
 .gallery img{
     width:100%;
-    height:260px;
-
+    height:250px;
     object-fit:cover;
     display:block;
-
     transition:.4s;
 }
 
@@ -146,9 +246,15 @@ h2{
 }
 
 .gallery-title{
-    padding:12px;
+    padding:11px;
     color:#d8b84c;
     font-weight:bold;
+}
+
+/* WHY */
+
+.why-card{
+    text-align:center;
 }
 
 /* REVIEWS */
@@ -156,7 +262,6 @@ h2{
 .reviews{
     max-width:950px;
     margin:auto;
-
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
     gap:18px;
@@ -186,11 +291,9 @@ h2{
 .location-box{
     max-width:850px;
     margin:auto;
-
     background:#102747;
     border:1px solid #c9a227;
     border-radius:14px;
-
     padding:30px;
 }
 
@@ -202,11 +305,9 @@ h2{
 .map{
     width:100%;
     height:300px;
-
     border:0;
     border-radius:12px;
-
-    margin:20px 0 22px;
+    margin:20px 0;
 }
 
 /* CONTACT */
@@ -214,7 +315,6 @@ h2{
 .contact-grid{
     max-width:900px;
     margin:0 auto 25px;
-
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:18px;
@@ -238,22 +338,15 @@ h2{
 
 .whatsapp{
     position:fixed;
-
     right:18px;
     bottom:18px;
-
     z-index:999;
-
     background:#25D366;
     color:#fff;
-
     padding:13px 19px;
-
     border-radius:30px;
-
     text-decoration:none;
     font-weight:800;
-
     box-shadow:0 4px 18px rgba(0,0,0,.35);
 }
 
@@ -261,13 +354,9 @@ h2{
 
 footer{
     padding:28px 20px;
-
     text-align:center;
-
     background:#050e1d;
-
     border-top:1px solid #c9a227;
-
     color:#dce3ed;
 }
 
@@ -289,19 +378,13 @@ footer{
 
     nav{
         display:none;
-
         position:absolute;
-
         top:64px;
         left:0;
         right:0;
-
         background:#07152d;
-
         border-bottom:1px solid #c9a227;
-
         flex-direction:column;
-
         padding:18px 5%;
         gap:15px;
     }
@@ -319,12 +402,8 @@ footer{
         padding:55px 5%;
     }
 
-    .gallery{
-        grid-template-columns:1fr;
-    }
-
     .gallery img{
-        height:240px;
+        height:210px;
     }
 
     .whatsapp{
@@ -512,71 +591,71 @@ Explore our premium sofa and furniture collection.
 <div class="gallery">
 
 <div class="gallery-item">
-<img src="product-1.jpg"
+<img src="./product-1.jpg"
 alt="Premium sofa in Bengaluru"
 loading="lazy">
 <div class="gallery-title">Premium Sofa</div>
 </div>
 
 <div class="gallery-item">
-<img src="product-2.jpg"
+<img src="./product-2.jpg"
 alt="L Shape sofa in Bengaluru"
 loading="lazy">
 <div class="gallery-title">L-Shape Sofa</div>
 </div>
 
 <div class="gallery-item">
-<img src="product-3.jpg"
+<img src="./product-3.jpg"
 alt="Modern sofa design in Bengaluru"
 loading="lazy">
 <div class="gallery-title">Modern Sofa</div>
 </div>
 
 <div class="gallery-item">
-<img src="product-4.jpg"
+<img src="./product-4.jpg"
 alt="Luxury sofa set"
 loading="lazy">
 <div class="gallery-title">Luxury Sofa Set</div>
 </div>
 
 <div class="gallery-item">
-<img src="product-5.jpg"
+<img src="./product-5.jpg"
 alt="Custom sofa design"
 loading="lazy">
 <div class="gallery-title">Custom Sofa</div>
 </div>
 
 <div class="gallery-item">
-<img src="product-6.jpg"
-alt="Premium furniture"
+<img src="./product-6.jpg"
+alt="Premium furniture in Bengaluru"
 loading="lazy">
 <div class="gallery-title">Premium Furniture</div>
 </div>
 
 <div class="gallery-item">
-<img src="product-7.jpg"
+<img src="./product-7.jpg"
 alt="Modern living room sofa"
 loading="lazy">
 <div class="gallery-title">Modern Living Room Sofa</div>
 </div>
 
 <div class="gallery-item">
-<img src="product-8.jpg"
+<img src="./product-8.jpg"
 alt="Elegant sofa design"
 loading="lazy">
 <div class="gallery-title">Elegant Sofa Design</div>
 </div>
 
 <div class="gallery-item">
-<img src="product-9.jpg"
+<img src="./product-9.jpg"
 alt="Iconic Home Furnishings sofa"
 loading="lazy">
 <div class="gallery-title">Iconic Sofa Collection</div>
 </div>
 
 <div class="gallery-item">
-<img src="product-10.jpg"
-alt="Premium furniture in Bengaluru"
+<img src="./product-10.jpg"
+alt="Premium furniture collection"
 loading="lazy">
 <div class="gallery-title">Premium Furniture Collection</div>
 </div>
@@ -595,25 +674,25 @@ Why Choose Us?
 
 <div class="cards">
 
-<div class="card">
+<div class="card why-card">
 <div class="card-icon">⭐</div>
 <h3>Premium Quality</h3>
 <p>Quality materials and excellent finishing.</p>
 </div>
 
-<div class="card">
+<div class="card why-card">
 <div class="card-icon">✨</div>
 <h3>Modern Designs</h3>
 <p>Stylish furniture for modern homes.</p>
 </div>
 
-<div class="card">
+<div class="card why-card">
 <div class="card-icon">📐</div>
 <h3>Custom Furniture</h3>
 <p>Furniture made according to your requirements.</p>
 </div>
 
-<div class="card">
+<div class="card why-card">
 <div class="card-icon">🤝</div>
 <h3>Trusted Service</h3>
 <p>Customer-focused service and quality craftsmanship.</p>
@@ -743,6 +822,8 @@ href="https://wa.me/918123538505?text=Hello%20Iconic%20Home%20Furnishings,%20I%2
 💬 WhatsApp
 </a>
 
+<!-- FOOTER -->
+
 <footer>
 
 © 2026 Iconic Home Furnishings
@@ -756,21 +837,17 @@ Comfort • Quality • Modern Design
 <script>
 
 function toggleMenu(){
-
-document
-.getElementById("navigation")
-.classList
-.toggle("active");
-
+    document
+    .getElementById("navigation")
+    .classList
+    .toggle("active");
 }
 
 function closeMenu(){
-
-document
-.getElementById("navigation")
-.classList
-.remove("active");
-
+    document
+    .getElementById("navigation")
+    .classList
+    .remove("active");
 }
 
 </script>
